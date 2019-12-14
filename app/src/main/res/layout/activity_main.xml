@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+// gravity : nhin view hien tai
+    // layout_gravity : nhin thang cha
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:text="Ứng dụng random"
+        android:textSize="30sp">
+    </TextView>
+    <EditText
+        android:id="@+id/edtMin"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="Nhập số min"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:id="@+id/edtMax"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="Nhập số max"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        tools:text="100"
+        android:textColor="#9C27B0">
+    </TextView>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnRandom"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate">
+
+
+    </Button>
+</LinearLayout>
